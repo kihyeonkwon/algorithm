@@ -1,0 +1,5 @@
+print('TTTTTTTTTT')
+print('TTTTTTTTTT')
+print('TT'.center(10))
+print('TT'.center(10))
+print('TT'.center(10))
