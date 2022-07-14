@@ -1,15 +1,16 @@
 import sys
+
 sys.stdin = open("숫자카드input.txt")
 tc = int(input())
 
-for i in range(1, tc+1):
+for i in range(1, tc + 1):
     N = int(input())
     deck = []
     cards = input()
     for j in cards:
         deck.append(int(j))
 
-    counting_cards = [0]*10
+    counting_cards = [0] * 10
     for k in deck:
         counting_cards[k] += 1
 
@@ -21,4 +22,4 @@ for i in range(1, tc+1):
             result = number
         number += 1
 
-    print('#%d %d %d' % (i, result, max))
+    print("#%d %d %d" % (i, result, max))

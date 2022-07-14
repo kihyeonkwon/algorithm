@@ -1,9 +1,10 @@
 import sys
-sys.stdin = open('input.txt')
+
+sys.stdin = open("input.txt")
 
 total_tc = 10
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     tc_input = int(input())
     a, b = map(int, input().split())
 
@@ -13,9 +14,9 @@ for tc in range(1, total_tc+1):
             return n
 
         else:
-            return n*sq(n, square-1)
+            return n * sq(n, square - 1)
 
-    print('#'+str(tc)+' ' + str(sq(a, b)))
+    print("#" + str(tc) + " " + str(sq(a, b)))
 
 
 #

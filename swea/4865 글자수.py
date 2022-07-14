@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('input.txt')
+sys.stdin = open("input.txt")
 
 
 def hmany(target, text):
@@ -16,7 +16,7 @@ def hmany(target, text):
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     target = input()
     text = input()
-    print('#%d %d' % (tc, hmany(target, text)))
+    print("#%d %d" % (tc, hmany(target, text)))

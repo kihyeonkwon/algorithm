@@ -13,7 +13,7 @@ for tc in range(total_tc):
 
         profit -= max_price
 
-    print('#%d %d' % (tc, profit))
+    print("#%d %d" % (tc, profit))
 
 
 # tc = int(input())

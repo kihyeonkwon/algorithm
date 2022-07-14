@@ -1,4 +1,5 @@
 import sys
+
 sys.stdin = open("5105.txt")
 
 dx = [1, -1, 0, 0]
@@ -12,20 +13,26 @@ def maze_runner(x, y):
         maze_TF[y][x] = True
         x, y = queue.pop(0)
         for i in range(4):
-            new_x, new_y = x+dx[i], y+dy[i]
-            if new_x >= 0 and new_x < N and new_y >= 0 and new_y < N and not maze_TF[new_y][new_x]:
+            new_x, new_y = x + dx[i], y + dy[i]
+            if (
+                new_x >= 0
+                and new_x < N
+                and new_y >= 0
+                and new_y < N
+                and not maze_TF[new_y][new_x]
+            ):
                 if maze[new_y][new_x] == 3:
                     return distance[y][x]
 
                 elif maze[new_y][new_x] == 0:
                     queue.append([new_x, new_y])
-                    distance[new_y][new_x] = distance[y][x]+1
+                    distance[new_y][new_x] = distance[y][x] + 1
     return 0
 
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     queue = []
     N = int(input())
     maze = [[int(x) for x in str(input())] for _ in range(N)]

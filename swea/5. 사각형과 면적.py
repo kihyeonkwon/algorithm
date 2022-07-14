@@ -1,6 +1,4 @@
-
-
-class Square():
+class Square:
     def __init__(self, length, height):
         self.length = length
         self.height = height
@@ -11,4 +9,4 @@ class Square():
 
 a = Square(4, 5)
 
-print(f'사각형의 면적: {a.area()}')
+print(f"사각형의 면적: {a.area()}")

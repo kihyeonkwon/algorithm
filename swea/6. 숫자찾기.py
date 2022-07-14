@@ -14,7 +14,7 @@ def findnumberfalse(y):
     c = 0
     for i in range(0, 5):
         if a[i] != y:
-            c = c+1
+            c = c + 1
 
     if c == 5:
         print("{0} => False".format(y))

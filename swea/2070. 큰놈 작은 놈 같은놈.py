@@ -1,14 +1,14 @@
 a = int(input())
 
 
-for i in range(1, a+1):
-    a, b = map(int, input().split(' '))
+for i in range(1, a + 1):
+    a, b = map(int, input().split(" "))
     ev = 0
     if a > b:
-        ev = '>'
+        ev = ">"
     elif a < b:
-        ev = '<'
+        ev = "<"
     else:
-        ev = '='
+        ev = "="
 
-    print(f'#{i} {ev}')
+    print(f"#{i} {ev}")

@@ -1,9 +1,10 @@
 import sys
-sys.stdin = open('정렬input.txt')
+
+sys.stdin = open("정렬input.txt")
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     N = int(input())
     original_list = list(map(int, input().split()))
 
@@ -19,7 +20,10 @@ for tc in range(1, total_tc+1):
                     max_value = original_list[j]
                     index = j
 
-            original_list[i], original_list[index] = original_list[index], original_list[i]
+            original_list[i], original_list[index] = (
+                original_list[index],
+                original_list[i],
+            )
 
         else:
             for j in range(i, N):
@@ -27,10 +31,13 @@ for tc in range(1, total_tc+1):
                     min_value = original_list[j]
                     index = j
 
-            original_list[i], original_list[index] = original_list[index], original_list[i]
+            original_list[i], original_list[index] = (
+                original_list[index],
+                original_list[i],
+            )
 
-    print('#%d' % (tc), end=' ')
+    print("#%d" % (tc), end=" ")
     for i in range(10):
-        print(original_list[i], end=' ')
+        print(original_list[i], end=" ")
 
     print()

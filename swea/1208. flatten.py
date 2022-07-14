@@ -1,9 +1,10 @@
 import sys
-sys.stdin = open('input.txt')
+
+sys.stdin = open("input.txt")
 
 total_tc = 10
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     total_dump = int(input())
     building_list = list(map(int, input().split()))
     number_of_buildings = len(building_list)
@@ -18,13 +19,13 @@ for tc in range(1, total_tc+1):
         min_value = min(building_dict.values())
         max_key = [k for k, v in building_dict.items() if v == max_value]
         min_key = [k for k, v in building_dict.items() if v == min_value]
-        building_dict[max_key[0]] = building_dict[max_key[0]]-1
-        building_dict[min_key[0]] = building_dict[min_key[0]]+1
+        building_dict[max_key[0]] = building_dict[max_key[0]] - 1
+        building_dict[min_key[0]] = building_dict[min_key[0]] + 1
         dump_count += 1
         if max(building_dict.values()) - min(building_dict.values()) == 1:
             break
 
-    print('#%d %d' % (tc, max(building_dict.values()) - min(building_dict.values())))
+    print("#%d %d" % (tc, max(building_dict.values()) - min(building_dict.values())))
 
 #
 # for test_case in range(1, 11):

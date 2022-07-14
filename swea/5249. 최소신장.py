@@ -1,8 +1,6 @@
 import sys
-sys.stdin = open('5249.txt')
 
-
-def dfs():
+sys.stdin = open("5249.txt")
 
 
 TC = int(input())

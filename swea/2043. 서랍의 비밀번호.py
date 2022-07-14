@@ -1,3 +1,3 @@
 P, K = map(int, input().split())
 
-print(P-K+1)
+print(P - K + 1)

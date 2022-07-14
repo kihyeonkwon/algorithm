@@ -4,4 +4,4 @@ result = ""
 for i in a:
     result += "{0}, ".format(i)
 
-print(result[0:len(result)-2])
+print(result[0 : len(result) - 2])

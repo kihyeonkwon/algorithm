@@ -1,6 +1,4 @@
-
-
-stars = '*****'
+stars = "*****"
 i = 5
 
 while i > 0:

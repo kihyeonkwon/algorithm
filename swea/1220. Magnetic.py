@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('input.txt')
+
+sys.stdin = open("input.txt")
 
 
 for tc in range(1, 11):
@@ -11,7 +12,7 @@ for tc in range(1, 11):
         for j in range(N):
             if table[j][i]:
                 stack.append(table[j][i])
-        for k in range(len(stack)-1):
-            if stack[k] == 1 and stack[k+1] == 2:
+        for k in range(len(stack) - 1):
+            if stack[k] == 1 and stack[k + 1] == 2:
                 cnt += 1
-    print('#%d %d' % (tc, cnt))
+    print("#%d %d" % (tc, cnt))

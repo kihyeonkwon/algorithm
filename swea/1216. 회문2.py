@@ -1,28 +1,28 @@
 import sys
 
-sys.stdin = open('회문2input.txt')
+sys.stdin = open("회문2input.txt")
 
 
 def palindrome(table, N):
     max_value = 0
     for M in range(N, 0, -1):
         for i in range(N):
-            for j in range(N-M+1):
+            for j in range(N - M + 1):
                 count = 0
-                for k in range(M//2):
-                    if table[i][j+k] == table[i][j+M-k-1]:
+                for k in range(M // 2):
+                    if table[i][j + k] == table[i][j + M - k - 1]:
                         count += 1
-                if count == M//2:
+                if count == M // 2:
                     if M > max_value:
                         max_value = M
 
         for i in range(N):
-            for j in range(N-M+1):
+            for j in range(N - M + 1):
                 count = 0
-                for k in range(M//2):
-                    if table[j+k][i] == table[j+M-k-1][i]:
+                for k in range(M // 2):
+                    if table[j + k][i] == table[j + M - k - 1][i]:
                         count += 1
-                if count == M//2:
+                if count == M // 2:
                     if M > max_value:
                         max_value = M
 
@@ -31,7 +31,7 @@ def palindrome(table, N):
 
 total_tc = 10
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     tc_input = int(input())
     table = [list(input()) for _ in range(100)]
     print("#%d %d" % (tc, palindrome(table, 100)))

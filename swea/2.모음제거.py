@@ -1,9 +1,9 @@
-data = 'Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.'
-search = 'aeiou'
+data = "Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open."
+search = "aeiou"
 
 result = [i for i in data if i not in search]
 
-print(''.join(result))
+print("".join(result))
 
 
 # sentencestr='Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.'

@@ -29,5 +29,5 @@
 
 b = 5
 for a in range(1, 12, 2):
-    print(" "*(b),  "*"*a)
-    b = b-1
+    print(" " * (b), "*" * a)
+    b = b - 1

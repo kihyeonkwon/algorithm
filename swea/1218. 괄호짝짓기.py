@@ -1,12 +1,12 @@
 import sys
 
-sys.stdin = open('input.txt')
+sys.stdin = open("input.txt")
 
 
 def scan(text):
     stack = []
-    left = ['{', '[', '(', '<']
-    right = ['}', ']', ')', '>']
+    left = ["{", "[", "(", "<"]
+    right = ["}", "]", ")", ">"]
     result = 1
     for i in text:
         if i in left:
@@ -27,7 +27,7 @@ def scan(text):
 
 total_tc = 10
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     length = int(input())
     b = input()
-    print('#%d %d' % (tc, scan(b)))
+    print("#%d %d" % (tc, scan(b)))

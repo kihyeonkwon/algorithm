@@ -1,10 +1,11 @@
 import sys
+
 sys.stdin = open("버스충전input.txt")
 tc = int(input())
 
-for i in range(1, tc+1):
+for i in range(1, tc + 1):
     K, N, M = list(map(int, input().split()))
-    stops = [0]*N
+    stops = [0] * N
     gas_stops = list(map(int, input().split()))
     for j in gas_stops:
         stops[j] = 1
@@ -18,7 +19,7 @@ for i in range(1, tc+1):
                 movement += 1
                 break
 
-            elif k == location+1:
+            elif k == location + 1:
                 movement = 0
                 location = N
                 break

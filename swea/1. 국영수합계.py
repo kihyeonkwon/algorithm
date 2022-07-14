@@ -1,6 +1,4 @@
-
-
-class student():
+class student:
     def __init__(self, korean, english, math):
         self.korean = korean
         self.english = english

@@ -3,22 +3,22 @@ a, b = map(int, input().split())
 
 if a == 1:
     if b == 1:
-        print('draw')
+        print("draw")
     elif b == 2:
-        print('B')
+        print("B")
     elif b == 3:
-        print('A')
+        print("A")
 elif a == 2:
     if b == 1:
-        print('A')
+        print("A")
     elif b == 2:
-        print('draw')
+        print("draw")
     elif b == 3:
-        print('B')
+        print("B")
 elif a == 3:
     if b == 1:
-        print('B')
+        print("B")
     elif b == 2:
-        print('A')
+        print("A")
     elif b == 3:
-        print('draw')
+        print("draw")

@@ -1,7 +1,7 @@
 tc = int(input())
 
 
-for i in range(1, tc+1):
+for i in range(1, tc + 1):
     size = int(input())
     dx = [+1, 0, -1, 0]
     dy = [0, -1, 0, +1]

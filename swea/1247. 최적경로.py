@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('1247.txt')
+
+sys.stdin = open("1247.txt")
 
 TC = int(input())
 
@@ -30,9 +31,9 @@ for tc in range(1, TC + 1):
     coor = list(map(int, input().split()))
     new_coor = []
     for i in range(0, len(coor), 2):
-        new_coor.append([coor[i], coor[i+1]])
+        new_coor.append([coor[i], coor[i + 1]])
     N = len(new_coor)
     visited = [False for _ in range(N)]
-    min_sum = 0xffffff
+    min_sum = 0xFFFFFF
     travel(0, 0)
     print("#%d" % (tc), min_sum)

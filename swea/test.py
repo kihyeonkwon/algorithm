@@ -1,6 +1,6 @@
-
 import sys
-sys.stdin = open('4366.txt')
+
+sys.stdin = open("4366.txt")
 
 for testcase in range(int(input())):
     B = input()  # Binary
@@ -38,7 +38,7 @@ for testcase in range(int(input())):
     # 여기까지가 2진수의 자릿수마다 0과 1로 변형해서 나올 수 있는 숫자들의 조합을 10진수로 바꾼것
 
     for l in range(len(Ternary_arr)):
-     # 0이면 1으로, 1이면 2으로, 2이면 0으로. 212
+        # 0이면 1으로, 1이면 2으로, 2이면 0으로. 212
         for m in range(2):
             if Ternary_arr[l] == 0:
                 Ternary_arr[l] = 1
@@ -66,4 +66,4 @@ for testcase in range(int(input())):
     for x in range(len(Binary_num)):
         for y in range(len(Ternary_num)):
             if Binary_num[x] == Ternary_num[y]:
-                print(f'#{testcase + 1} {Binary_num[x]}')
+                print(f"#{testcase + 1} {Binary_num[x]}")

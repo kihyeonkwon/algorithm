@@ -24,9 +24,9 @@ def prim(start):
 
 V, E = map(int, input().split())  # 정점, 간선
 adj = [0] * V  # 인접행렬
-INF = float('inf')
-dist = [INF] * V                    # 가중치
-visited = [0] * V                   # 방문여부
+INF = float("inf")
+dist = [INF] * V  # 가중치
+visited = [0] * V  # 방문여부
 PI = list(range(V))
 
 for i in range():

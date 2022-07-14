@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('1227.txt')
+
+sys.stdin = open("1227.txt")
 
 TC = 10
 for tc in range(1, TC + 1):
@@ -7,7 +8,7 @@ for tc in range(1, TC + 1):
     N = 100
     maze = [list(map(int, input())) for _ in range(N)]
     maze_tf = [[0 for _ in range(N)] for _ in range(N)]
-    #startpoint (y, x)
+    # startpoint (y, x)
 
     for i in range(N):
         for j in range(N):
@@ -28,7 +29,7 @@ for tc in range(1, TC + 1):
         now = Q.pop(0)
         maze_tf[now[0]][now[1]] = 1
         for d in range(4):
-            next = (now[0]+dy[d], now[1]+dx[d])
+            next = (now[0] + dy[d], now[1] + dx[d])
             if 0 <= next[0] < N and 0 <= next[1] < N:
 
                 if maze_tf[next[0]][next[1]] == 0:
@@ -36,4 +37,4 @@ for tc in range(1, TC + 1):
                         result = 1
                     elif maze[next[0]][next[1]] == 0:
                         Q.append(next)
-    print('#%d %d' % (tc, result))
+    print("#%d %d" % (tc, result))

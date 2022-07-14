@@ -1,7 +1,4 @@
-
-
-class Shape():
-
+class Shape:
     def __init__(self):
         pass
 
@@ -10,7 +7,6 @@ class Shape():
 
 
 class Square(Shape):
-
     def __init__(self, length):
         self.length = length
 
@@ -18,4 +14,4 @@ class Square(Shape):
         return self.length * self.length
 
 
-print(f'정사각형의 면적: {Square(3).area()}')
+print(f"정사각형의 면적: {Square(3).area()}")

@@ -7,7 +7,7 @@
 #     print(a[1])
 
 
-a = input().split(', ')
+a = input().split(", ")
 b = len(a)
 newlist = []
 d = 0

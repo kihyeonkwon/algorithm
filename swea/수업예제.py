@@ -26,9 +26,9 @@
 
 def calc(x, y, operator="+"):
     if operator == "+":
-        return x+y
+        return x + y
     else:
-        return x-y
+        return x - y
 
 
 ret_val = calc(10, 5, "+")

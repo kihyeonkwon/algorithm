@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('1238.txt')
+
+sys.stdin = open("1238.txt")
 
 
 def bfs(start_input):
@@ -9,7 +10,7 @@ def bfs(start_input):
         start = queue.pop(0)
         for contact in range(101):
             if table[start][contact] == 1 and dtf[contact] == 0:
-                dtf[contact] = dtf[start]+1
+                dtf[contact] = dtf[start] + 1
                 queue.append(contact)
 
     last_list = [i for i, x in enumerate(dtf) if x == max(dtf)]
@@ -25,7 +26,7 @@ for tc in range(1, 11):
     # table maker
     table = [[0 for _ in range(101)] for _ in range(101)]
     dtf = [0 for _ in range(101)]
-    for i in range(N//2):
-        table[relations[2*i]][relations[2*i+1]] = 1
+    for i in range(N // 2):
+        table[relations[2 * i]][relations[2 * i + 1]] = 1
 
     print("#%d %d" % (tc, bfs(initial)))

@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('7465.txt')
+
+sys.stdin = open("7465.txt")
 
 
 def friends(person):
@@ -18,13 +19,13 @@ def friends(person):
 
 
 total_tc = int(input())
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     N, M = map(int, input().split())
     relation = {}
     relation_tf = [False for _ in range(N + 1)]
-    for i in range(1, N+1):
+    for i in range(1, N + 1):
         relation[i] = []
-    relation_tf = [False for _ in range(N+1)]
+    relation_tf = [False for _ in range(N + 1)]
 
     for _ in range(M):
         a, b = map(int, input().split())
@@ -32,7 +33,7 @@ for tc in range(1, total_tc+1):
         relation[b].append(a)
 
     group = 0
-    for j in range(1, N+1):
+    for j in range(1, N + 1):
         if relation_tf[j] == False:
             friends(j)
             group += 1

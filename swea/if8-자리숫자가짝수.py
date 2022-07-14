@@ -1,5 +1,5 @@
 a = 100
-result = ''
+result = ""
 
 
 while a <= 300:
@@ -8,8 +8,8 @@ while a <= 300:
     w = int(str(a)[1])
     e = int(str(a)[2])
 
-    if (q % 2 == 0 and w % 2 == 0 and e % 2 == 0):
-        result += '%d,' % a
+    if q % 2 == 0 and w % 2 == 0 and e % 2 == 0:
+        result += "%d," % a
         a += 1
 
     else:
@@ -17,4 +17,4 @@ while a <= 300:
 
 
 if a == 301:
-    print(result[0:len(result)-1])
+    print(result[0 : len(result) - 1])

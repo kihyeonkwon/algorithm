@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('행렬input.txt')
+
+sys.stdin = open("행렬input.txt")
 
 total_tc = int(input())
 

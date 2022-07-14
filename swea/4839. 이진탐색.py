@@ -1,4 +1,5 @@
 import sys
+
 sys.stdin = open("이진input.txt")
 
 
@@ -23,15 +24,15 @@ def bin_search(l, r, P):
 total_tc = int(input())
 
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     l = 1
     r, Pa, Pb = list(map(int, input().split()))
     a_count = bin_search(l, r, Pa)
     b_count = bin_search(l, r, Pb)
     if a_count > b_count:
-        result = 'B'
+        result = "B"
     elif a_count < b_count:
-        result = 'A'
+        result = "A"
     else:
         result = 0
 

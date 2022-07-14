@@ -1,9 +1,10 @@
 import sys
-sys.stdin = open('input.txt')
+
+sys.stdin = open("input.txt")
 
 
 def maze_runner(maze, TF, N):
-    start_x = maze[N-1].index(2)
+    start_x = maze[N - 1].index(2)
     end_x = maze[0].index(3)
 
 

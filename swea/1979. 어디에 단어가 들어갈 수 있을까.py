@@ -1,11 +1,11 @@
 import sys
 
-sys.stdin = open('input.txt')
+sys.stdin = open("input.txt")
 
 total_tc = int(input())
 
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     N, K = map(int, input().split())
     table = [list(map(int, input().split())) for _ in range(N)]
     ans = []

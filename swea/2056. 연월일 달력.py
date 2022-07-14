@@ -1,29 +1,37 @@
 i = int(input())
 
-for j in range(1, i+1):
-    print(f'#{j}', end=' ')
+for j in range(1, i + 1):
+    print(f"#{j}", end=" ")
     a = input()
 
-    if a[4:6] == '01' or a[4:6] == '03' or a[4:6] == '05' or a[4:6] == '07' or a[4:6] == '08' or a[4:6] == '10' or a[4:6] == '12':
+    if (
+        a[4:6] == "01"
+        or a[4:6] == "03"
+        or a[4:6] == "05"
+        or a[4:6] == "07"
+        or a[4:6] == "08"
+        or a[4:6] == "10"
+        or a[4:6] == "12"
+    ):
         if int(a[6:]) <= 31:
-            print(a[:4] + '/' + a[4:6] + '/' + a[6:])
+            print(a[:4] + "/" + a[4:6] + "/" + a[6:])
         else:
             print(-1)
 
-    elif a[4:6] == '04' or a[4:6] == '06' or a[4:6] == '09' or a[4:6] == '11':
+    elif a[4:6] == "04" or a[4:6] == "06" or a[4:6] == "09" or a[4:6] == "11":
         if int(a[6:]) <= 30:
-            print(a[:4] + '/' + a[4:6] + '/' + a[6:])
+            print(a[:4] + "/" + a[4:6] + "/" + a[6:])
         else:
             print(-1)
 
-    elif a[4:6] == '02':
+    elif a[4:6] == "02":
         if int(a[6:]) <= 28:
-            print(a[:4] + '/' + a[4:6] + '/' + a[6:])
+            print(a[:4] + "/" + a[4:6] + "/" + a[6:])
         else:
             print(-1)
 
     else:
-        print('-1')
+        print("-1")
 
 
 # def ispossible(n):

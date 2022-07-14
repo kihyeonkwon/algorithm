@@ -1,4 +1,3 @@
-
 # nazi = [1, 1]
 # for i in range (8):
 #     newnazi = (nazi[-1] + nazi[-2])

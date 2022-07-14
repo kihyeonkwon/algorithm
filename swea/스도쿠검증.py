@@ -65,6 +65,7 @@
 
 #
 import sys
+
 T = int(input())
 
 for t in range(1, T + 1):
@@ -87,10 +88,10 @@ for t in range(1, T + 1):
 
         if row_sum != 45 or col_sum != 45:
             result = 0
-    print('#{}'.format(t), result)
+    print("#{}".format(t), result)
 
 
-sys.stdin = open('스도쿠.txt')
+sys.stdin = open("스도쿠.txt")
 
 # 연속된 것들을 9개로 나눠줘야 한다.
 sudoku = []
@@ -150,23 +151,53 @@ for m in range(10):
             Q += 3
         P += 3
     if cell_sums == [45, 45, 45, 45, 45, 45, 45, 45, 45]:
-        if cell_multiples == [362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880]:
+        if cell_multiples == [
+            362880,
+            362880,
+            362880,
+            362880,
+            362880,
+            362880,
+            362880,
+            362880,
+            362880,
+        ]:
             if line_sums == [45, 45, 45, 45, 45, 45, 45, 45, 45]:
-                if line_multiples == [362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880]:
+                if line_multiples == [
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                    362880,
+                ]:
                     if low_sums == [45, 45, 45, 45, 45, 45, 45, 45, 45]:
-                        if low_multiples == [362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880, 362880]:
-                            print(f'#{m + 1} 1')
+                        if low_multiples == [
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                            362880,
+                        ]:
+                            print(f"#{m + 1} 1")
                         else:
-                            print(f'#{m + 1} 0')
+                            print(f"#{m + 1} 0")
                     else:
-                        print(f'#{m + 1} 0')
+                        print(f"#{m + 1} 0")
                 else:
-                    print(f'#{m + 1} 0')
+                    print(f"#{m + 1} 0")
             else:
-                print(f'#{m + 1} 0')
+                print(f"#{m + 1} 0")
         else:
-            print(f'#{m + 1} 0')
+            print(f"#{m + 1} 0")
     else:
-        print(f'#{m + 1} 0')
+        print(f"#{m + 1} 0")
 
     x += 9

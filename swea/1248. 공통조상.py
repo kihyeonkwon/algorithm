@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('1248.txt')
+
+sys.stdin = open("1248.txt")
 
 total_tc = int(input())
 
@@ -22,9 +23,9 @@ for tc in range(1, total_tc + 1):
     V, E, A, B = list(map(int, input().split()))
     temp_list = list(map(int, input().split()))
     # tree 만들기. parent, leftchild, rightchild
-    tree = [[0, 0, 0] for _ in range(V+1)]
+    tree = [[0, 0, 0] for _ in range(V + 1)]
     for i in range(E):
-        parent, child = temp_list[2*i], temp_list[2*i+1]
+        parent, child = temp_list[2 * i], temp_list[2 * i + 1]
         if tree[parent][1] == 0:
             tree[parent][1] = child
         else:

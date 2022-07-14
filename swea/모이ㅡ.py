@@ -8,11 +8,11 @@ while b <= a:
 
     if a % b == 0:
         print("%d(은)는 %d의 약수입니다." % (b, a))
-        b = b+1
-        c = c+1
+        b = b + 1
+        c = c + 1
 
     else:
-        b = b+1
+        b = b + 1
 
 
 if c == 2:

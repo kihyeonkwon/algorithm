@@ -4,8 +4,8 @@
 
 def scan(text):
     stack = []
-    left = ['{', '(']
-    right = ['}', ')']
+    left = ["{", "("]
+    right = ["}", ")"]
     for i in text:
         if i in left:
             stack.append(i)
@@ -28,6 +28,6 @@ def scan(text):
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
     b = input()
-    print('#%d %d' % (tc, scan(b)))
+    print("#%d %d" % (tc, scan(b)))

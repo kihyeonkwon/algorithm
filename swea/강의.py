@@ -1,5 +1,3 @@
-
-
 def input_index():
     num = 0
     try:

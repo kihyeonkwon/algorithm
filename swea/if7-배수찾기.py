@@ -1,10 +1,10 @@
 a = 1
-result = ''
+result = ""
 
 
 while a <= 200:
 
-    if (a % 7 == 0 and a % 5 != 0):
+    if a % 7 == 0 and a % 5 != 0:
         result += "%d," % a
         a += 1
 
@@ -12,4 +12,4 @@ while a <= 200:
         a += 1
 
 if a == 201:
-    print(result[0:len(result)-1])
+    print(result[0 : len(result) - 1])

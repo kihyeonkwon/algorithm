@@ -44,10 +44,10 @@
 
 a = str(input())
 numlist = list(range(0, 10))
-blist = [0]*10
+blist = [0] * 10
 for i in numlist:
     for j in a:
         if i == int(j):
             blist[i] += 1
-print(' '.join(map(str, numlist)))
-print(' '.join(map(str, blist)))
+print(" ".join(map(str, numlist)))
+print(" ".join(map(str, blist)))

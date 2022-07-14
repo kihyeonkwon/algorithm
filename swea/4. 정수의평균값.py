@@ -1,6 +1,5 @@
-
 lista = [int(input()) for i in range(5)]
-print("이새끼들은 {0}이고 평균은 {1:0.1f}".format(lista, sum(lista)/len(lista)))
+print("이새끼들은 {0}이고 평균은 {1:0.1f}".format(lista, sum(lista) / len(lista)))
 
 
 # jot=[]

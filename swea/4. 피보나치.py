@@ -16,10 +16,10 @@ c = 0
 
 abc = []
 
-for i in range(1, x+1):
+for i in range(1, x + 1):
     abc += [b]
     c = b
-    b = a+b
+    b = a + b
     a = c
 
 print(abc)

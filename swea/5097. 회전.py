@@ -1,10 +1,11 @@
 import sys
+
 sys.stdin = open("5097.txt")
 
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
+for tc in range(1, total_tc + 1):
 
     N, M = map(int, input().split())
     number_queue = list(map(int, input().split()))

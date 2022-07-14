@@ -1,4 +1,5 @@
 import sys
+
 sys.stdin = open("종이input.txt")
 
 
@@ -12,6 +13,6 @@ def papercut(width):
 
 total_tc = int(input())
 
-for tc in range(1, total_tc+1):
-    width = (int(input()))//10
+for tc in range(1, total_tc + 1):
+    width = (int(input())) // 10
     print("#%d %d" % (tc, papercut(width)))

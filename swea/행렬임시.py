@@ -36,10 +36,13 @@ for i in range(1, t + 1):
         for k in range(0, len(chemicals) - j - 1):
             if chemicals[k][0] > chemicals[k + 1][0]:
                 chemicals[k], chemicals[k + 1] = chemicals[k + 1], chemicals[k]
-            elif chemicals[k][0] == chemicals[k + 1][0] and chemicals[k][1] > chemicals[k + 1][1]:
+            elif (
+                chemicals[k][0] == chemicals[k + 1][0]
+                and chemicals[k][1] > chemicals[k + 1][1]
+            ):
                 chemicals[k], chemicals[k + 1] = chemicals[k + 1], chemicals[k]
 
-    print(f'#{i} {len(chemicals)}', end=" ")
+    print(f"#{i} {len(chemicals)}", end=" ")
     for c in chemicals:
         print(c[1], c[2], end=" ")
     print()

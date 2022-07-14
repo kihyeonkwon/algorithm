@@ -1,6 +1,6 @@
 import heapq
 
-'''
+"""
 10 14
 0 1 12
 0 2 15
@@ -9,7 +9,7 @@ import heapq
 2 5 7
 
 8 9 5
-'''
+"""
 
 
 def dijkstra(start):
@@ -41,9 +41,9 @@ def dijkstra(start):
 
 V, E = map(int, input().split())  # 정점, 간선
 adj = [0] * V  # 인접행렬
-INF = float('inf')
-dist = [INF] * V                    # 가중치
-visited = [0] * V                   # 방문여부
+INF = float("inf")
+dist = [INF] * V  # 가중치
+visited = [0] * V  # 방문여부
 heap = []
 
 for i in range():

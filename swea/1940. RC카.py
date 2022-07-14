@@ -1,7 +1,7 @@
 tc = int(input())
 
 
-for i in range(1, tc+1):
+for i in range(1, tc + 1):
     total_second = int(input())
     distance = 0
     speed = 0
@@ -19,4 +19,4 @@ for i in range(1, tc+1):
 
         distance += speed
 
-    print(f'#{i} {distance}')
+    print(f"#{i} {distance}")

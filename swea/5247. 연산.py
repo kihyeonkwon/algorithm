@@ -1,10 +1,11 @@
 import sys
-sys.stdin = open('5247.txt')
+
+sys.stdin = open("5247.txt")
 
 TC = int(input())
 
 
-for tc in range(1, TC+1):
+for tc in range(1, TC + 1):
     N, M = map(int, input().split())
     count = 0
     Q = [[N, count]]
