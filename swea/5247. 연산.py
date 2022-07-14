@@ -13,7 +13,7 @@ for tc in range(1, TC+1):
         if value[0] > 1000000:
             continue
         if value[0] == M:
-            print("#%d"%(tc), value[1])
+            print("#%d" % (tc), value[1])
             break
 
         else:
@@ -21,12 +21,3 @@ for tc in range(1, TC+1):
             Q.append([value[0] * 2, value[1] + 1])
             Q.append([value[0] - 1, value[1] + 1])
             Q.append([value[0] - 10, value[1] + 1])
-
-
-
-
-
-
-
-
-

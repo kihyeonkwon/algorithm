@@ -9,7 +9,7 @@ def maze_runner(maze, TF, N):
 
 T = int(input())
 N = int(input())
-maze = [list(input()) for _ in range (N)]
-TF = [[False for _ in range (N)] for _ in range(N)]
+maze = [list(input()) for _ in range(N)]
+TF = [[False for _ in range(N)] for _ in range(N)]
 
 print(TF)

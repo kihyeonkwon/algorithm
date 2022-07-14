@@ -63,8 +63,8 @@
 #
 
 
-
 #
+import sys
 T = int(input())
 
 for t in range(1, T + 1):
@@ -90,24 +90,6 @@ for t in range(1, T + 1):
     print('#{}'.format(t), result)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import sys
 sys.stdin = open('스도쿠.txt')
 
 # 연속된 것들을 9개로 나눠줘야 한다.

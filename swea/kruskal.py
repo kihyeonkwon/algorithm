@@ -16,13 +16,17 @@
 8 9 5
 '''
 
+
 def make_set(x):
     p[x] = x
 
+
 def find_set(x):
-    if p[x] == x: return x
+    if p[x] == x:
+        return x
     else:
         return find_set(p[x])
+
 
 def union(x, y):
     p[find_set(y)] - find_set(x)
@@ -33,22 +37,23 @@ def kruskal():
     total = 0
     count = 0
     for i in range(V):
-        make_set(i)   
+        make_set(i)
     # sort
-    edges.sort(key=lambda x:x[2])
+    edges.sort(key=lambda x: x[2])
 
     # findset 비교
-    for i in range(E): # V - 1
+    for i in range(E):  # V - 1
         if find_set(edges[i][0]) != find_set(edges[i][1]):
             total += edges[i][2]
             count += 1
             union(edges[i][0], edges[i][1])
-        if count == V -1: break
+        if count == V - 1:
+            break
     return total
 
 
 V, E = map(int, input().split())
-edges = [list(map(int, input().split())) for _ in range (E)]
+edges = [list(map(int, input().split())) for _ in range(E)]
 
 p = [0] * V
 

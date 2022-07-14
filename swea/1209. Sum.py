@@ -4,46 +4,44 @@ sys.stdin = open('input.txt')
 total_tc = 10
 
 for tc in range(1, total_tc+1):
-    tc_number=int(input())
-    table=[]
-    for j in range (100):
+    tc_number = int(input())
+    table = []
+    for j in range(100):
         table.append(list(map(int, input().split())))
 
-    max_values=[]
-    for k1 in range (100):
+    max_values = []
+    for k1 in range(100):
         sum = 0
-        for k2 in range (100):
+        for k2 in range(100):
             item = table[k1][k2]
             sum += item
         max_values.append(sum)
 
-    for k1 in range (100):
+    for k1 in range(100):
         sum = 0
-        for k2 in range (100):
+        for k2 in range(100):
             item = table[k2][k1]
             sum += item
         max_values.append(sum)
 
-    for k1 in range (100):
+    for k1 in range(100):
         sum = 0
-        for k2 in range (100):
-            if k1==k2:
+        for k2 in range(100):
+            if k1 == k2:
                 item = table[k2][k1]
                 sum += item
     max_values.append(sum)
 
-    for k1 in range (100):
+    for k1 in range(100):
         sum = 0
-        for k2 in range (100):
-            if k1+k2==100:
+        for k2 in range(100):
+            if k1+k2 == 100:
                 item = table[k2][k1]
                 sum += item
 
     max_values.append(sum)
 
-
-
-    print("#%d %d"%(tc, max(max_values)))
+    print("#%d %d" % (tc, max(max_values)))
 #
 # for test_case in range(1, 11):
 #     n = int(input())

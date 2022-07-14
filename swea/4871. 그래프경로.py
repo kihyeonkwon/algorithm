@@ -19,12 +19,11 @@ def DFS(S):
     return result
 
 
-
 for tc in range(1, total_tc+1):
     V, E = map(int, input().split())
-    valid ={}
-    result=0
-    visited =[False for _ in range(V+1)]
+    valid = {}
+    result = 0
+    visited = [False for _ in range(V+1)]
 
     for _ in range(E):
         Start, End = map(int, input().split())
@@ -34,5 +33,4 @@ for tc in range(1, total_tc+1):
             valid[Start].append(End)
 
     S, G = map(int, input().split())
-    print("#%d %d"%(tc, DFS(S)))
-
+    print("#%d %d" % (tc, DFS(S)))

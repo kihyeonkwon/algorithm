@@ -7,24 +7,21 @@
 #     print(a[1])
 
 
-
 a = input().split(', ')
-b=len(a)
-newlist=[]
-d=0
+b = len(a)
+newlist = []
+d = 0
 
 
-for i in range (0, b):
-    newlist+=[len(a[i])]
+for i in range(0, b):
+    newlist += [len(a[i])]
 
 
-c= int(max(newlist))
+c = int(max(newlist))
 
 
+for i in range(0, b):
+    if newlist[i] == c:
+        d = i
 
-for i in range (0, b):
-    if newlist[i]==c:
-        d=i
-    
 print(a[d])
-

@@ -2,8 +2,6 @@
 # sys.stdin = open("괄호검사input.txt")
 
 
-
-
 def scan(text):
     stack = []
     left = ['{', '(']
@@ -22,15 +20,14 @@ def scan(text):
         else:
             pass
 
-
     if stack:
         return 0
     else:
         return 1
 
 
-total_tc =int(input())
+total_tc = int(input())
 
 for tc in range(1, total_tc+1):
     b = input()
-    print('#%d %d'%(tc, scan(b)))
+    print('#%d %d' % (tc, scan(b)))

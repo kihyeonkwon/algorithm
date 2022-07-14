@@ -1,8 +1,6 @@
 
 
-
-a=input()
-
+a = input()
 
 
 a4 = a.count("A")

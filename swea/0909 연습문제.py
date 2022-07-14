@@ -4,10 +4,9 @@ def preorder(node):
     global cnt
     if node:
         cnt += 1
-        print(node, end = ' ')
+        print(node, end=' ')
         preorder(tree[node][0])
         preorder(tree[node][1])
-
 
 
 V = int(input())
@@ -16,12 +15,11 @@ tree = [[0, 0, 0] for _ in range(V+1)]
 relations = list(map(int, input().split()))
 for i in range(V-1):
     parent, child = relations[2*i:2*i+2]
-    if tree[parent][0]==0:
+    if tree[parent][0] == 0:
         tree[parent][0] = child
     else:
         tree[parent][1] = child
-    tree[child][2]=parent
-
+    tree[child][2] = parent
 
 
 for t in tree:

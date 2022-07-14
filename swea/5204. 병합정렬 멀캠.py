@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open('5204.txt')
+sys.stdin = open('5204.txt')
 
 TC = int(input())
 
@@ -27,6 +27,7 @@ TC = int(input())
 #
 #     return result
 
+
 def merge_sort(m):
     if len(m) == 1:
         return m
@@ -45,11 +46,11 @@ def merge_sort(m):
     if left[-1] > right[-1]:
         count += 1
     result = [0 for _ in range(N)]
-    i= 0
+    i = 0
     j = 0
     c = 0
     while i < len(left) and j < len(right):
-        if i < len(left) and  j < len(right):
+        if i < len(left) and j < len(right):
             if left[i] <= right[j]:
                 result[c] = (left[i])
                 i += 1
@@ -61,9 +62,8 @@ def merge_sort(m):
     if i < len(left):
         result[c:] = left[i:]
 
-    if j < len(right)  :
+    if j < len(right):
         result[c:] = right[j:]
-
 
     return result
 
@@ -73,4 +73,4 @@ for tc in range(1, TC+1):
     numbers = list(map(int, input().split()))
     count = 0
     new = merge_sort(numbers)
-    print("#%d"%(tc), new[N//2], count)
+    print("#%d" % (tc), new[N//2], count)

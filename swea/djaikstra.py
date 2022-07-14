@@ -10,6 +10,8 @@ import heapq
 
 8 9 5
 '''
+
+
 def dijkstra(start):
     # 출발점 설정
     dist[start] = 0
@@ -25,7 +27,8 @@ def dijkstra(start):
         #         u = v
         # visited[u] = 1
         D, u = heapq.heappop(heap)
-        if visited[u] : continue
+        if visited[u]:
+            continue
         visited[u] = 1
 
         for v in range(V):
@@ -33,15 +36,11 @@ def dijkstra(start):
                 if dist[v] > dist[u] + adj[u][v]:
                     dist[v] = dist[u] + adj[u][v]
 
-
         # 최소값 정점 인접한 정점 업데이트
 
 
-
-
-
-V, E = map(int, input().split())    #정점, 간선
-adj = [0] * V                        #인접행렬
+V, E = map(int, input().split())  # 정점, 간선
+adj = [0] * V  # 인접행렬
 INF = float('inf')
 dist = [INF] * V                    # 가중치
 visited = [0] * V                   # 방문여부

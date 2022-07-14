@@ -8,7 +8,7 @@
 #     temp =[]
 #     for j in range (b):
 #         temp.append(i*j)
-    
+
 #     result = result +[temp]
 
 

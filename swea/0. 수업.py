@@ -2,7 +2,6 @@ class Person:
     pass
 
 
-
 member = Person()
 
 

@@ -12,7 +12,7 @@ def scan(text):
         if i in left:
             stack.append(i)
         else:
-            if stack ==False:
+            if stack == False:
                 return 0
 
             else:
@@ -25,9 +25,9 @@ def scan(text):
     return result
 
 
-total_tc =10
+total_tc = 10
 
 for tc in range(1, total_tc+1):
     length = int(input())
     b = input()
-    print('#%d %d'%(tc, scan(b)))
+    print('#%d %d' % (tc, scan(b)))

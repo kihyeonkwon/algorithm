@@ -15,9 +15,9 @@ for i in b:
 
 num = len(a)
 
-for i in range (num):
-    if a[i]!= b[i]:
-        lower +=1
+for i in range(num):
+    if a[i] != b[i]:
+        lower += 1
 
 
 upper = letter - lower

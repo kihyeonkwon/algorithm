@@ -4,4 +4,4 @@ num = len(dic)
 
 
 for i in dic:
-    print ("{0}: {1}".format(i, dic[i]))
+    print("{0}: {1}".format(i, dic[i]))

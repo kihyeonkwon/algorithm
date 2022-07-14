@@ -1,13 +1,12 @@
 a = input().split(', ')
-result=1
+result = 1
 
 
+try:
+    b = len(a)
 
-try :
-    b=len(a)
-
-    for i in range (b):
-        result=result*int(a[i])
+    for i in range(b):
+        result = result*int(a[i])
 
     print(result)
 

@@ -5,5 +5,6 @@ class Korean:
     def printNationality(cls):
         return cls.Nationality
 
+
 print(Korean.printNationality())
 print(Korean.printNationality())

@@ -1,10 +1,10 @@
 count = 0
-while True : 
+while True:
     a = input()
-    if not a :
+    if not a:
         break
 
     print(">> {0}".format(a.upper()))
-    count +=1
-    if count ==3 :
+    count += 1
+    if count == 3:
         break

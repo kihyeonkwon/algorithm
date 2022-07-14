@@ -12,8 +12,6 @@
 # print(a)
 
 
-
-
 class Dog():
     def __init__(self, name):
 
@@ -22,7 +20,6 @@ class Dog():
 
 my_dog = Dog(name='오한영')
 
-name=my_dog.name
+name = my_dog.name
 
 print(name)
-

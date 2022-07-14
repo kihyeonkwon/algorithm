@@ -1,14 +1,8 @@
 # -*- coding : utf-8 -*-
 
 
-
-
-
 # for i in range(1, 5, 1):
 #     print("*" *i)
-
-
-
 
 
 # i = 1
@@ -23,9 +17,6 @@
 #         print("*"*j)
 
 
-
-
-
 # a=1
 # b=1
 
@@ -36,8 +27,7 @@
 #     a+=1
 #     b=1
 
-b=5
-for a in range (1, 12, 2):
+b = 5
+for a in range(1, 12, 2):
     print(" "*(b),  "*"*a)
-    b=b-1
-
+    b = b-1

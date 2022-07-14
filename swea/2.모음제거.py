@@ -6,23 +6,9 @@ result = [i for i in data if i not in search]
 print(''.join(result))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # sentencestr='Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.'
 
 # sentence=list(sentencestr)
-
 
 
 # numa=int(sentence.count('a'))
@@ -51,7 +37,6 @@ print(''.join(result))
 
 # for ele in sentence:
 #     result += ele
-
 
 
 # print(result)

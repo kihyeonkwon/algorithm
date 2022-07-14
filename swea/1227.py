@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('1227.txt')
 
 TC = 10
-for tc in range(1, TC +1):
+for tc in range(1, TC + 1):
     tc2 = int(input())
     N = 100
     maze = [list(map(int, input())) for _ in range(N)]
@@ -16,8 +16,7 @@ for tc in range(1, TC +1):
             if maze[j][i] == 3:
                 endpoint = (j, i)
 
-
-    #travel via bfs
+    # travel via bfs
     dx = [1, -1, 0, 0]
     dy = [0, 0, 1, -1]
     Q = []
@@ -34,8 +33,7 @@ for tc in range(1, TC +1):
 
                 if maze_tf[next[0]][next[1]] == 0:
                     if maze[next[0]][next[1]] == 3:
-                        result =1
+                        result = 1
                     elif maze[next[0]][next[1]] == 0:
                         Q.append(next)
-    print('#%d %d'%(tc, result))
-
+    print('#%d %d' % (tc, result))
