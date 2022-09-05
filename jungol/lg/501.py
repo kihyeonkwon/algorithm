@@ -1,3 +1,3 @@
-text = 'Fun Programming!'
+text = "Fun Programming!"
 
 print(text)

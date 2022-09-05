@@ -4,8 +4,9 @@ def avg_round(numbers):
     for number in numbers:
         total_sum += number
 
-    result = round(total_sum/n)
+    result = round(total_sum / n)
     return result
+
 
 def round_avg(numbers):
     n = len(numbers)
@@ -15,6 +16,7 @@ def round_avg(numbers):
 
     result = total_sum / n
     return round(result)
+
 
 numbers = list(map(float, input().split()))
 print(avg_round(numbers))

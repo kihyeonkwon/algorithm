@@ -7,5 +7,5 @@ elif weight <= 72.57:
     print("Middleweight")
 elif weight <= 88.45:
     print("Cruiserweight")
-else :
+else:
     print("Heavyweight")

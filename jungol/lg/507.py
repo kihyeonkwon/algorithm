@@ -1,5 +1,5 @@
 a = 5
 b = 2
-name = 'Dan'
+name = "Dan"
 
-print(f'{a} {name}\n{a} * {b} = {a*b}')
+print(f"{a} {name}\n{a} * {b} = {a*b}")

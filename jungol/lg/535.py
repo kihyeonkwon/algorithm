@@ -7,4 +7,4 @@ elif gpa >= 3.0:
 elif gpa >= 2.0:
     print("seasonal semester")
 else:
-    print('retake')
+    print("retake")

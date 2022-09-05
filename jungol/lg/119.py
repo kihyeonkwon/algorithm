@@ -7,4 +7,3 @@ b = a + now.month - 1
 c = b + now.day
 
 print(f"{a} {b} {c}")
-

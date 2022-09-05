@@ -4,7 +4,7 @@ sum = 0
 count = 0
 
 for num in numList:
-    if num == 0 :
+    if num == 0:
         break
     else:
         sum += num

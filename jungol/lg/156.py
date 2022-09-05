@@ -1,7 +1,7 @@
 numbers = list(map(int, input().split()))
 
 max = 0
-min = 0xffffff
+min = 0xFFFFFF
 
 for number in numbers:
     if number == 999:
@@ -11,5 +11,5 @@ for number in numbers:
     if number < min:
         min = number
 
-print('max : %d'%(max))
-print('min : %d'%(min))
+print("max : %d" % (max))
+print("min : %d" % (min))

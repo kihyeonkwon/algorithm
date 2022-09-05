@@ -11,9 +11,7 @@ print(count)
 for number in numbers:
     if number == 0:
         break
-    if number %2 == 0:
-        print(number//2, end=' ')
+    if number % 2 == 0:
+        print(number // 2, end=" ")
     else:
-        print(number*2, end = ' ')
-
-
+        print(number * 2, end=" ")

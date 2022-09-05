@@ -4,5 +4,5 @@ for i in range(3):
 
 for row in table:
     for element in row:
-        print(element.lower(), end=' ')
+        print(element.lower(), end=" ")
     print()

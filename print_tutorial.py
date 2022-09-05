@@ -1,2 +1,2 @@
-print('hi', end=' ')
-print('bye')
+print("hi", end=" ")
+print("bye")

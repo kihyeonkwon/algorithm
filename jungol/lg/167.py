@@ -1,4 +1,4 @@
-table  = []
+table = []
 
 for i in range(4):
     table.append(list(map(int, input().split())))
@@ -16,11 +16,10 @@ for i in range(4):
 
 
 for number in row_sum:
-    print('%d'%(number//2), end= ' ')
+    print("%d" % (number // 2), end=" ")
 print()
 for number in col_sum:
-    print('%d'%(number//4), end= ' ')
+    print("%d" % (number // 4), end=" ")
 print()
 
-print('%d'%(total_sum//8))
-
+print("%d" % (total_sum // 8))

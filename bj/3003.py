@@ -1,4 +1,3 @@
-
 # 현재 가지고 있는 킹, 퀸, 룩, 비숍, 나이트, 폰의 수를 입력 받습니다.
 king, queen, rook, bishop, knight, pawn = map(int, input().split())
 

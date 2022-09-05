@@ -1,9 +1,10 @@
 def yellat():
-    print('@@@@@@@@@@')
+    print("@@@@@@@@@@")
 
-print('first')
+
+print("first")
 yellat()
-print('second')
+print("second")
 yellat()
-print('third')
+print("third")
 yellat()
