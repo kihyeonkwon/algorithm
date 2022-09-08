@@ -8,4 +8,4 @@ max_num = max(num_list)
 index = num_list.index(max_num)
 
 print(max_num)
-print(index+1)
+print(index + 1)

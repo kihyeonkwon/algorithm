@@ -6,7 +6,7 @@ for _ in range(T):
     total_score = 0
     point = 1
     for answer in answers:
-        if answer == 'O':
+        if answer == "O":
             total_score += point
             point += 1
         else:

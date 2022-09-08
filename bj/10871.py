@@ -8,4 +8,4 @@ for number in my_list:
     if number < X:
         result_list.append(str(number))
 
-print('aaa'.join(result_list))
+print("aaa".join(result_list))
